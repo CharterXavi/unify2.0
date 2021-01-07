@@ -2,14 +2,14 @@ import Layout from "../components/layout"
 import React from "react"
 import SEO from "../components/seo"
 
-const BlogIndex = () => {
+const GuidelinesPage = () => {
 
   return (
     <Layout>
-      <SEO title="All posts" />
-      HOME PAGE
+      <SEO title="Guidelines" />
+      GUIDELINES PAGE
     </Layout>
   )
 }
 
-export default BlogIndex
+export default GuidelinesPage

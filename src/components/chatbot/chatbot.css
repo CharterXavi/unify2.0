@@ -1,0 +1,6 @@
+.Chatbot h2 {
+    color: white;
+}
+.Chatbot a:hover {
+    opacity: 0.8;
+}

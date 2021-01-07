@@ -1,0 +1,82 @@
+.Sidebar {
+    height: 85px;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    background: black;
+    -webkit-box-shadow: var(--nav-shadow);
+    -moz-box-shadow: var(--nav-shadow);
+    box-shadow: var(--nav-shadow);
+    z-index: 10;
+}
+.Sidebar .header-boundary {
+    max-width: 1440px;
+    height: 100%;
+    margin: 0 auto;
+}
+.main-bar {
+    background: black;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    transition: 0.4s ease all;
+}
+/* ------ BRAND ------ */
+.Sidebar a {
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+.Sidebar img {
+    height: 70px;
+    margin: 0 0 0 32px;
+}
+.Sidebar .Logo {
+    height: 70px;
+    width: 200px;
+    margin-left: 20px;
+}
+.Sidebar .btn-primary {
+    margin: 0 0 0 0;
+    width: auto;
+}
+
+
+/* ----- NAVBAR ------ */
+.header-right {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+}
+.hamburger {
+    width: 50%;
+    position: relative;
+}
+.background-blur {
+    background: rgba(0,0,0,0.7);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+}
+small {
+    width: 35px;
+    box-sizing: border-box;
+    margin: 0 0 0 32px;
+    font-weight: lighter;
+    color: white;
+}
+
+@media only screen and (max-width: 600px) {
+    .Sidebar {
+        height: 65px;
+    }
+    .Sidebar .header-boundary {
+        height: 65px;
+    }
+    .Sidebar .Logo {
+        height: 45px;
+        margin: 0 0 0 0px;
+    }
+}
