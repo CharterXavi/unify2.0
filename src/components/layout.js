@@ -1,36 +1,43 @@
+/**
+ * Layout component that queries for data
+ * with Gatsby's useStaticQuery component
+ *
+ * See: https://www.gatsbyjs.org/docs/use-static-query/
+ */
+
+import "./layout.css"
+
+import Chatbot from './chatbot/chatbot';
+import Footer from "./footer/footer"
+import PropTypes from "prop-types"
 import React from "react"
-import { Link } from "gatsby"
+import Sidebar from "./sidebar/sidebar"
 
-const Layout = ({ location, title, children }) => {
-  const rootPath = `${__PATH_PREFIX__}/`
-  const isRootPath = location.pathname === rootPath
-  let header
-
-  if (isRootPath) {
-    header = (
-      <h1 className="main-heading">
-        <Link to="/">{title}</Link>
-      </h1>
-    )
-  } else {
-    header = (
-      <Link className="header-link-home" to="/">
-        {title}
-      </Link>
-    )
-  }
-
+const Layout = ({ children }) => {
   return (
-    <div className="global-wrapper" data-is-root-path={isRootPath}>
-      <header className="global-header">{header}</header>
-      <main>{children}</main>
-      <footer>
-        © {new Date().getFullYear()}, Built with
-        {` `}
-        <a href="https://www.gatsbyjs.com">Gatsby</a>
-      </footer>
-    </div>
+    <>
+      <Sidebar />
+      {/* <div
+        style={{
+          margin: `0 auto`,
+          maxWidth: 960,
+          padding: `0 1.0875rem 1.45rem`,
+        }}
+      > */}
+      {/* Use a div to push the rest of the content down to line up after the navbar, since it's fixed */}
+      <div className='spacer'></div>
+      <main>
+        {children}
+        <Chatbot />
+      </main>
+      <Footer />
+      {/* </div> */}
+    </>
   )
+}
+
+Layout.propTypes = {
+  children: PropTypes.node.isRequired,
 }
 
 export default Layout
