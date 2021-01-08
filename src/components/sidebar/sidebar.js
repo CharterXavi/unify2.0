@@ -32,11 +32,11 @@ const Sidebar = () => {
         isSubMenuExpanded: false,
         subMenu: [
           {
-            name: 'Testimonials',
+            name: 'Submenu',
             path: '/about/testimonials'
           },
           {
-            name: 'Partnerships',
+            name: 'Submenu',
             path: '/about/partnerships'
           }
         ]
@@ -47,27 +47,27 @@ const Sidebar = () => {
         isSubMenuExpanded: false,
         subMenu: [
           {
-            name:'Private Duty Home Care',
+            name:'Submenu',
             path:'/services/private-duty',
           },
           {
-          name:'Skilled Home Health',
+          name:'Submenu',
           path:'/services/home-health',
           },
           {
-            name:'Palliative Care',
+            name:'Submenu',
             path:'/services/palliative-care',
           },
           {
-            name:'Complex Care Management',
+            name:'Submenu',
             path:'/services/ccm',
           },
           {
-            name:'Hospice',
+            name:'Submenu',
             path:'/services/hospice',
           },
           {
-            name:'Acute/Hospital-Based Care',
+            name:'Submenu',
             path:'/services/acute-care',
           }
         ]
@@ -89,15 +89,15 @@ const Sidebar = () => {
         isSubMenuExpanded: false,
         subMenu: [
           {
-            name: 'Recent',
+            name: 'Submenu',
             path: '/news/recent'
           },
           {
-            name: 'Categories',
+            name: 'Submenu',
             path: '/news/categories'
           },
           {
-            name: 'Tags',
+            name: 'Submenu',
             path: '/news/tags'
           }
         ]
@@ -108,7 +108,7 @@ const Sidebar = () => {
         isSubMenuExpanded: false,
         subMenu: [
           {
-            name: 'Volunteering & Interning',
+            name: 'Submenu',
             path: '/careers/volunteering'
           }
         ]
@@ -165,6 +165,10 @@ const Sidebar = () => {
     setMenuExpanded(!isMenuExpanded);
   }
 
+  const handleHover = () => {
+    console.log('HOVERED!');
+  }
+
   const expandSubMenu = (id) => {
     //create a new list from old list, but update whichever child was clicked on
     const newList = menuLinks.map((mainLink) => {
@@ -185,7 +189,7 @@ const Sidebar = () => {
   }
 
   return (
-    <header className='Sidebar'>
+    <header className={`Sidebar ${isHamburgerClicked ? 'active' : 'hidden' }`} onMouseOver={handleHover}>
       <div className='header-boundary'>
         <div className='main-bar'>
           <Link to="/" aria-label='Visit the home page'>

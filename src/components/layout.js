@@ -15,24 +15,14 @@ import Sidebar from "./sidebar/sidebar"
 
 const Layout = ({ children }) => {
   return (
-    <>
+    <div className='layout'>
       <Sidebar />
-      {/* <div
-        style={{
-          margin: `0 auto`,
-          maxWidth: 960,
-          padding: `0 1.0875rem 1.45rem`,
-        }}
-      > */}
-      {/* Use a div to push the rest of the content down to line up after the navbar, since it's fixed */}
-      <div className='spacer'></div>
       <main>
         {children}
         <Chatbot />
+        <Footer />
       </main>
-      <Footer />
-      {/* </div> */}
-    </>
+    </div>
   )
 }
 
