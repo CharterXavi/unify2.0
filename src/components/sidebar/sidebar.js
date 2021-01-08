@@ -32,11 +32,11 @@ const Sidebar = () => {
         isSubMenuExpanded: false,
         subMenu: [
           {
-            name: 'Submenu',
+            name: 'Submenu1',
             path: '/about/testimonials'
           },
           {
-            name: 'Submenu',
+            name: 'Submenu2',
             path: '/about/partnerships'
           }
         ]
@@ -47,27 +47,27 @@ const Sidebar = () => {
         isSubMenuExpanded: false,
         subMenu: [
           {
-            name:'Submenu',
+            name:'Submenu3',
             path:'/services/private-duty',
           },
           {
-          name:'Submenu',
+          name:'Submenu4',
           path:'/services/home-health',
           },
           {
-            name:'Submenu',
+            name:'Submenu5',
             path:'/services/palliative-care',
           },
           {
-            name:'Submenu',
+            name:'Submenu6',
             path:'/services/ccm',
           },
           {
-            name:'Submenu',
+            name:'Submenu7',
             path:'/services/hospice',
           },
           {
-            name:'Submenu',
+            name:'Submenu8',
             path:'/services/acute-care',
           }
         ]
@@ -89,15 +89,15 @@ const Sidebar = () => {
         isSubMenuExpanded: false,
         subMenu: [
           {
-            name: 'Submenu',
+            name: 'Submenu9',
             path: '/news/recent'
           },
           {
-            name: 'Submenu',
+            name: 'Submenu10',
             path: '/news/categories'
           },
           {
-            name: 'Submenu',
+            name: 'Submenu11',
             path: '/news/tags'
           }
         ]
@@ -108,7 +108,7 @@ const Sidebar = () => {
         isSubMenuExpanded: false,
         subMenu: [
           {
-            name: 'Submenu',
+            name: 'Submenu12',
             path: '/careers/volunteering'
           }
         ]
@@ -199,7 +199,7 @@ const Sidebar = () => {
           {/* that way we can pass info about whether or not the button's been clicked to expand the menu here accordingly */}
           <div className='header-right'>
             {isMenuExpanded ? 
-              <small>CLOSE</small> /* margin included since 'close' is longer word than 'menu', causing neighboring elements to move around */
+              <small className='active'>CLOSE</small> /* margin included since 'close' is longer word than 'menu', causing neighboring elements to move around */
               :
               <small>MENU</small>
             }
