@@ -1,6 +1,6 @@
 .Sidebar {
-    height: 85px;
-    width: 100vw;
+    height: 100%;
+    width: 170px;
     position: fixed;
     top: 0;
     background: black;
@@ -8,18 +8,6 @@
     -moz-box-shadow: var(--nav-shadow);
     box-shadow: var(--nav-shadow);
     z-index: 10;
-}
-.Sidebar .header-boundary {
-    max-width: 1440px;
-    height: 100%;
-    margin: 0 auto;
-}
-.main-bar {
-    background: black;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: space-between;
     transition: 0.4s ease all;
 }
 /* ------ BRAND ------ */
@@ -38,9 +26,25 @@
     width: 200px;
     margin-left: 20px;
 }
-.Sidebar .btn-primary {
-    margin: 0 0 0 0;
-    width: auto;
+.Sidebar .MenuClicker .plus-sign {
+    width: 20px;
+    height: 20px;
+}
+.Sidebar.active {
+    left: 0;
+}
+.Sidebar.hidden {
+    left: -200px;
+}
+.Sidebar .Hamburger {
+    position: absolute;
+    left: 200px;
+    top: 30px;
+}
+.Sidebar .Logo {
+    width: 200px;
+    height: 90px;
+    margin: 0;
 }
 
 
@@ -50,10 +54,6 @@
     align-items: center;
     justify-content: flex-end;
     width: 100%;
-}
-.hamburger {
-    width: 50%;
-    position: relative;
 }
 .background-blur {
     background: rgba(0,0,0,0.7);
@@ -66,17 +66,95 @@ small {
     margin: 0 0 0 32px;
     font-weight: lighter;
     color: white;
+    position: absolute;
+    left: 260px;
+    top: 47.5px;
+    transition: 0.4s ease all;
+}
+small.active {
+    left: 186px;
+    top: 85px;
 }
 
 @media only screen and (max-width: 600px) {
-    .Sidebar {
-        height: 65px;
-    }
     .Sidebar .header-boundary {
         height: 65px;
     }
+    .Sidebar .Hamburger, small {
+        position: relative;
+        left: 0px;
+        top: 0;
+    }
+    small.active {
+        left: 0;
+        top: 0;
+    }
+    .Sidebar.active {
+        left: 0;
+    }
+    .Sidebar.hidden {
+        left: 0px;
+    }
+    .Sidebar {
+        height: 65px;
+        width: 100vw;
+        position: fixed;
+        top: 0;
+        background: black;
+        -webkit-box-shadow: var(--nav-shadow);
+        -moz-box-shadow: var(--nav-shadow);
+        box-shadow: var(--nav-shadow);
+        z-index: 10;
+        overflow: initial;
+    }
+    .Sidebar .header-boundary {
+        max-width: 1440px;
+        height: 100%;
+        margin: 0 auto;
+    }
+    .main-bar {
+        background: black;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        transition: 0.4s ease all;
+    }
+    /* ------ BRAND ------ */
+    .Sidebar a {
+        color: white;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+    }
+    .Sidebar img {
+        height: 70px;
+        margin: 0 0 0 32px;
+    }
     .Sidebar .Logo {
-        height: 45px;
-        margin: 0 0 0 0px;
+        height: 70px;
+        width: 100px;
+        margin: 0 0 0 16px;
+    }
+    
+    
+    /* ----- NAVBAR ------ */
+    .header-right {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        width: 100%;
+    }
+    .background-blur {
+        background: rgba(0,0,0,0.7);
+        -webkit-backdrop-filter: blur(10px);
+        backdrop-filter: blur(10px);
+    }
+    small {
+        width: 35px;
+        box-sizing: border-box;
+        margin: 0 0 0 32px;
+        font-weight: lighter;
+        color: white;
     }
 }
