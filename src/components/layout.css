@@ -32,7 +32,7 @@ html {
   padding: 0;
   font-family: 'Nunito', sans-serif;
   overflow-x: hidden;
-  background: var(--heading-color);
+  background: var(--light-clinic-blue);
   overscroll-behavior: none; 
 }
 body {
@@ -41,6 +41,9 @@ body {
   width: 100%;
   font-family: 'Nunito', sans-serif;
   font-size: 17px;
+}
+main {
+  width: 100%;
 }
 h1, h2, h4, h5, h6 {
   font-family: 'Nunito', sans-serif;
@@ -129,6 +132,15 @@ hr {
   border: 3px solid white;
   box-sizing: border-box;
   border-radius: 50px;
+}
+.content-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 1000px;
+  padding: 16px;
+  box-sizing: border-box;
 }
 .layout {
   display: flex;
@@ -316,6 +328,10 @@ hr {
   }
 }
 @media only screen and (max-width: 1000px) {
+  /* --- CONTENT CONTAINER --- */
+  .content-container {
+    width: 100%;
+  }
   /* --- COLUMN WITH TEXT-LEFT --- */
   .two-column-left {
     flex-direction: column-reverse;

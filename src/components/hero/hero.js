@@ -10,7 +10,7 @@ const Hero = () => {
             <div className="content">
                 <Logo />
                 <h1>Design System by Charter Healthcare Group</h1>
-                <ButtonPrimary />
+                <ButtonPrimary link='#home' content='Dive in!'/>
             </div>
         </div>
     )

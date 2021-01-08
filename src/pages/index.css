@@ -1,4 +1,12 @@
 .HomePage {
     width: 100%;
     height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.HomePage .home p span {
+    font-weight: bolder;
+    color: var(--primary-accent);
 }

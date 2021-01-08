@@ -61,19 +61,24 @@
     backdrop-filter: blur(10px);
 }
 small {
-    width: 35px;
+    width: auto;
     box-sizing: border-box;
+    padding: 4px 8px;
     margin: 0 0 0 32px;
-    font-weight: lighter;
+    font-weight: normal;
     color: white;
     position: absolute;
     left: 260px;
-    top: 47.5px;
-    transition: 0.4s ease all;
+    top: 42px;
+    border-radius: 10px;
+    transition: 0.3s ease all;
+    background: var(--maximum-blue);
+    box-shadow: var(--standard-shadow);
 }
 small.active {
-    left: 186px;
+    left: 178px;
     top: 85px;
+    background: var(--primary-accent);
 }
 
 @media only screen and (max-width: 600px) {
@@ -85,9 +90,15 @@ small.active {
         left: 0px;
         top: 0;
     }
+    small {
+        background: none;
+        font-weight: normal;
+        padding: 0;
+    }
     small.active {
         left: 0;
         top: 0;
+        background: none;
     }
     .Sidebar.active {
         left: 0;
