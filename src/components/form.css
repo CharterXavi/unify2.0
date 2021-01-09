@@ -17,7 +17,7 @@ form label {
 }
 .headings p {
     font-size: 18px;
-    color: white;
+    color: var(--detail-grey);
     padding: 4px 0 8px 0;
 }
 .name, .info, .submit {
@@ -44,8 +44,8 @@ input, textarea {
     border-radius: 10px;
     border: none;
     outline: none;
-    background: var(--scrubs-blue);
-    color: var(--light-clinic-blue);
+    background: white;
+    color: var(--detail-grey);
     font-family: 'Nunito', sans-serif;
     font-weight: bold;
     padding: 0 0 0 0;

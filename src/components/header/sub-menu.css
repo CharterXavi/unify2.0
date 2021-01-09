@@ -41,5 +41,5 @@
     padding: 0 0 0 16px;
 }
 .SubMenu ul li a:hover {
-    background: black;
+    background: rgba(255, 255, 255, 0.15)
 }

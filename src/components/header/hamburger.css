@@ -17,9 +17,10 @@
     width: 90%;
     height: 5px;
     border-radius: 10px;
-    background: white;
+    background: var(--primary-accent);
     margin: 7px;
     transition: 0.4s ease all;
+    box-shadow: var(--button-shadow);
 }
 .burger1flip {
     width: 80%;
@@ -31,9 +32,10 @@
     width: 75%;
     height: 5px;
     border-radius: 10px;
-    background: var(--maximum-blue);
+    background: var(--primary-accent);
     margin: 7px;
     transition: 0.4s ease all;
+    box-shadow: var(--standard-shadow);
 }
 .burger2flip {
     width: 0;
@@ -48,6 +50,7 @@
     background: var(--primary-accent);
     margin: 7px;
     transition: 0.4s ease all;
+    box-shadow: var(--standard-shadow);
 }
 .burger3flip {
     width: 80%;
@@ -60,4 +63,11 @@
         width: 50px;
         margin: 0 20px 0 0;
     }
+    .burger1 {
+        background: white;
+    }
+    .burger2 {
+        background: var(--maximum-blue);
+    }
 }
+

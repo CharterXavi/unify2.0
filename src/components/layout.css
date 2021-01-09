@@ -139,7 +139,7 @@ hr {
   align-items: center;
   justify-content: flex-start;
   width: 1000px;
-  padding: 16px;
+  padding: 64px 16px;
   box-sizing: border-box;
 }
 .layout {
@@ -174,7 +174,6 @@ hr {
   transition: 0.3s ease all;
   height: 44px;
 }
-
 /* --- COLUMN WITH TEXT-LEFT --- */
 .two-column-left {
   max-width: 1000px;
