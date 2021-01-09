@@ -2,6 +2,7 @@ import './sidebar.css'
 
 import React, {useState} from 'react'
 
+import CompassIcon from '../icons/compass'
 import Hamburger from '../header/hamburger'
 import { Link } from "gatsby"
 import Logo from '../icons/logo'
@@ -42,34 +43,14 @@ const Sidebar = () => {
         ]
       },
       {
-        name: 'Purpose',
+        name: 'Purpose & Vision',
         path: '/purpose',
         isSubMenuExpanded: false,
         subMenu: [
           {
-            name:'Submenu3',
-            path:'/services/private-duty',
+            name:'',
+            path: ''
           },
-          {
-          name:'Submenu4',
-          path:'/services/home-health',
-          },
-          {
-            name:'Submenu5',
-            path:'/services/palliative-care',
-          },
-          {
-            name:'Submenu6',
-            path:'/services/ccm',
-          },
-          {
-            name:'Submenu7',
-            path:'/services/hospice',
-          },
-          {
-            name:'Submenu8',
-            path:'/services/acute-care',
-          }
         ]
       },
       {
@@ -138,6 +119,17 @@ const Sidebar = () => {
       {
         name: 'Iconography',
         path: '/iconography',
+        isSubMenuExpanded: false,
+        subMenu: [
+          {
+            name: '',
+            path: ''
+          }
+        ]
+      },
+      {
+        name: 'Forms',
+        path: '/forms',
         isSubMenuExpanded: false,
         subMenu: [
           {

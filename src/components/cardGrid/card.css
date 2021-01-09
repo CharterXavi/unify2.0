@@ -6,3 +6,9 @@
 .Card .ButtonPrimaryAlt {
     max-width: 120px;
 }
+.Card:hover .icon, .card:hover h4 {
+    transform: translateY(-8px);
+}
+.Card:hover .ButtonPrimaryAlt {
+    transform: translateY(8px);
+}

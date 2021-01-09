@@ -7,6 +7,7 @@ const Card = (props) => {
 
     return (
         <div class="Card">
+            {props.icon}
             <h4 className='detail-title'>{props.title}</h4>
             <p className='detail-text'>{props.desc}</p>
             <ButtonPrimaryAlt link={props.link} content='Read more' />
