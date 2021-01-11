@@ -1,3 +1,4 @@
+import FooterNav from '../components/footer/footernav'
 import Header from '../components/header/header'
 import Layout from "../components/layout"
 import NetworkIcon from '../components/icons/network'
@@ -15,6 +16,14 @@ const IconographyPage = () => {
           
         </section>
       </div>
+
+
+      <FooterNav 
+        prevLink='/buttons'
+        prevPage='← Buttons'
+        nextLink='/forms'
+        nextPage='Forms →'
+      />
     </Layout>
   )
 }

@@ -1,4 +1,5 @@
 import FlowerIcon from '../components/icons/flower'
+import FooterNav from '../components/footer/footernav'
 import Header from '../components/header/header'
 import Layout from "../components/layout"
 import React from "react"
@@ -14,6 +15,13 @@ const LogosPage = () => {
         <section className="content-container">
           
         </section>
+
+        <FooterNav 
+          prevLink='/forms'
+          prevPage='← Forms'
+          nextLink='/'
+          nextPage='Home →'
+        />
       </div>
     </Layout>
   )

@@ -1,3 +1,4 @@
+import FooterNav from '../components/footer/footernav'
 import Header from '../components/header/header'
 import Layout from "../components/layout"
 import React from "react"
@@ -14,6 +15,13 @@ const PurposePage = () => {
         <section className="content-container">
 
         </section>
+
+        <FooterNav 
+          prevLink='/guidelines'
+          prevPage='← Guidelines'
+          nextLink='/colors'
+          nextPage='Colors →'
+        />
       </div>
     </Layout>
   )

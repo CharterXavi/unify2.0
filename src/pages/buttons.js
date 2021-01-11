@@ -1,3 +1,4 @@
+import FooterNav from '../components/footer/footernav'
 import Header from '../components/header/header'
 import Layout from "../components/layout"
 import React from "react"
@@ -15,6 +16,13 @@ const ButtonsPage = () => {
           
         </section>
       </div>
+
+      <FooterNav 
+        prevLink='/spacing'
+        prevPage='← Spacing'
+        nextLink='/iconography'
+        nextPage='Iconography →'
+      />
     </Layout>
   )
 }

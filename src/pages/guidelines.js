@@ -29,7 +29,10 @@ const GuidelinesPage = () => {
             </p>
           </div>
           <div className="guidelines-elements">
-            <h4>Important Elements of UNIFY</h4>
+            <div className="title">
+              <h4>Important Elements of UNIFY</h4>
+              <hr/>
+            </div>
             <h6>Figma</h6>
             <p>
               UNIFY's design components live in Figma, a popular modern design tool. 

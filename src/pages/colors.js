@@ -1,4 +1,5 @@
 import ColorsIcon from '../components/icons/colors'
+import FooterNav from '../components/footer/footernav'
 import Header from '../components/header/header'
 import Layout from "../components/layout"
 import React from "react"
@@ -15,6 +16,14 @@ const ColorsPage = () => {
           
         </section>
       </div>
+
+
+      <FooterNav 
+        prevLink='/purpose'
+        prevPage='← Purpose & Vision'
+        nextLink='/typography'
+        nextPage='Typography →'
+      />
     </Layout>
   )
 }

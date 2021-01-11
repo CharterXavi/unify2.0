@@ -1,3 +1,4 @@
+import FooterNav from '../components/footer/footernav'
 import FormsIcon from '../components/icons/form'
 import Header from '../components/header/header'
 import Layout from "../components/layout"
@@ -15,6 +16,13 @@ const FormsPage = () => {
           
         </section>
       </div>
+
+      <FooterNav 
+        prevLink='/iconography'
+        prevPage='← Iconography'
+        nextLink='/logos'
+        nextPage='Logos →'
+      />
     </Layout>
   )
 }
