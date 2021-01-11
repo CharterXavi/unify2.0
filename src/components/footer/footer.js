@@ -21,6 +21,7 @@ const Footer = () => {
                         <li className='detail-text'><Link to='/footer/terms-and-conditions'>Terms & Conditions</Link></li>
                         <li className='detail-text'><Link to='/footer/privacy-policy'>Privacy Policy</Link></li>
                         <li className='detail-text'><a href="http://charterhcg.training.reliaslearning.com/" target="_blank" rel="noopener noreferrer">Learning Center</a></li>
+                        <li className='detail-text'><a href="https://workforcenow.adp.com/" target="_blank" rel="noopener noreferrer">IT Helpdesk</a></li>
                     </ul>
                 </div>
                 <div className='headquarters'>
