@@ -14,18 +14,18 @@
 }
 .Footer .content-wrapper {
     display: flex;
-    width: 1200px;
+    width: 1000px;
     height: 600px;
 }
 .Footer .left {
-    width: 60%;
+    width: 70%;
     padding: 32px;
     display: flex;
     justify-content: center;
     align-items: flex-start;
 }
 .Footer .right {
-    width: 40%;
+    width: 30%;
     padding: 32px;
     display: flex;
     flex-direction: column;
@@ -99,7 +99,7 @@
     color: var(--light-clinic-blue);
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1000px) {
     .Footer .content-wrapper {
         width: 100%;
     }

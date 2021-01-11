@@ -33,12 +33,8 @@ const Sidebar = () => {
         isSubMenuExpanded: false,
         subMenu: [
           {
-            name: 'Submenu1',
-            path: '/about/testimonials'
-          },
-          {
-            name: 'Submenu2',
-            path: '/about/partnerships'
+            name: '',
+            path: ''
           }
         ]
       },
@@ -51,17 +47,6 @@ const Sidebar = () => {
             name:'',
             path: ''
           },
-        ]
-      },
-      {
-        name: 'Vision',
-        path: '/vision',
-        isSubMenuExpanded: false,
-        subMenu: [
-          {
-            name: '',
-            path: ''
-          }
         ]
       },
       {
