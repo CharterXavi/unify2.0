@@ -1,0 +1,23 @@
+.FooterNav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background: none;
+}
+.FooterNav .button-wrapper {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+}
+.FooterNav .button-wrapper .ButtonPrimaryAlt,
+.FooterNav .button-wrapper .ButtonSecondary {
+    margin: 8px;
+}
+
+@media only screen and (max-width: 450px) {
+    .FooterNav .button-wrapper {
+        flex-direction: column;
+    }
+}

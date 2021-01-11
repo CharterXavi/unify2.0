@@ -63,11 +63,5 @@
         width: 50px;
         margin: 0 20px 0 0;
     }
-    .burger1 {
-        background: white;
-    }
-    .burger2 {
-        background: var(--maximum-blue);
-    }
 }
 

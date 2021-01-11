@@ -1,0 +1,94 @@
+.guidelines-elements {
+    margin: 64px 0;
+}
+.svg-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 400px;
+    position: relative;
+    transition: 1s;
+}
+.atomic {
+    position: absolute;
+    bottom: 0;
+    z-index: 5;
+    width: 25%;
+    height: 25%;
+    transition: 0.8s cubic-bezier(0.645, 0.045, 0.355, 1) all;
+}
+.molecular {
+    position: absolute;
+    bottom: 0;
+    z-index: 4;
+    width: 45%;
+    height: 45%;
+    transition: 0.5s cubic-bezier(0.645, 0.045, 0.355, 1) all;
+}
+.substance {
+    position: absolute;
+    bottom: 0;
+    z-index: 3;
+    width: 65%;
+    height: 65%;
+    transition: 0.5s cubic-bezier(0.645, 0.045, 0.355, 1) all;
+}
+.material {
+    position: absolute;
+    bottom: 0;
+    z-index: 2;
+    width: 85%;
+    height: 85%;
+    transition: 0.8s cubic-bezier(0.645, 0.045, 0.355, 1) all;
+}
+.right:hover .atomic {
+    transform: translateY(100px);
+}
+.right:hover .molecular {
+    transform: translateY(50px);
+}
+.right:hover .substance {
+    transform: translateY(-50px);
+}
+.right:hover .material {
+    transform: translateY(-100px);
+}
+
+@media only screen and (max-width: 1000px) {
+    .right:hover .svg-container {
+        transform: translateX(50px);
+    }
+    .right:hover .atomic {
+    transform: translateX(100px);
+    }
+    .right:hover .molecular {
+        transform: translateX(50px);
+    }
+    .right:hover .substance {
+        transform: translateX(-50px);
+    }
+    .right:hover .material {
+        transform: translateX(-100px);
+    }
+}
+@media only screen and (max-width: 400px) {
+    .svg-container {
+        height: 250px;
+    }
+    .right:hover .svg-container {
+        transform: translateX(25px);
+    }
+    .right:hover .atomic {
+    transform: translateX(50px);
+    }
+    .right:hover .molecular {
+        transform: translateX(20px);
+    }
+    .right:hover .substance {
+        transform: translateX(-20px);
+    }
+    .right:hover .material {
+        transform: translateX(-50px);
+    }
+}
