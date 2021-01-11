@@ -152,7 +152,7 @@ hr {
   align-items: center;
   justify-content: flex-start;
   width: 1000px;
-  padding: 150px 16px 64px 16px;
+  padding: 64px 16px;
   box-sizing: border-box;
 }
 .layout {
@@ -346,6 +346,7 @@ hr {
   /* --- CONTENT CONTAINER --- */
   .content-container {
     width: 100%;
+    padding: 150px 16px 64px 16px;
   }
   /* --- COLUMN WITH TEXT-LEFT --- */
   .two-column-left {
@@ -400,6 +401,10 @@ hr {
   }
 }
 @media only screen and (max-width: 600px) {
+  .content-container {
+    width: 100%;
+    padding: 15px 16px 64px 16px;
+  }
   .spacer {
     height: 60px;
   }
