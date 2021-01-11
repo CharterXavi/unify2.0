@@ -12,3 +12,10 @@
 .Card:hover .ButtonPrimaryAlt {
     transform: translateY(8px);
 }
+
+@media only screen and (max-width: 500px) {
+    .Card {
+        padding: 32px 0;
+        width: 100%;
+    }
+}

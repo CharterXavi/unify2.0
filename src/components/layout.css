@@ -107,7 +107,7 @@ p {
   font-weight: 400px;
   letter-spacing: 0.5px;
 }
-ul {
+ul, ol {
   padding-left: 20px;
   margin: 4px 0;
 }
@@ -133,13 +133,26 @@ hr {
   box-sizing: border-box;
   border-radius: 50px;
 }
+.page {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.page h4,
+.page h5,
+.page h6 {
+  color: var(--heading-color);
+}
 .content-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
   width: 1000px;
-  padding: 64px 16px;
+  padding: 150px 16px 64px 16px;
   box-sizing: border-box;
 }
 .layout {
@@ -204,7 +217,6 @@ hr {
   align-items: center;
   justify-content: flex-end;
 }
-
 /* --- COLUMN WITH TEXT-RIGHT --- */
 .two-column-right {
   color: var(--heading-color);
@@ -309,7 +321,11 @@ hr {
 
 
 
-
+@media only screen and (max-width: 1285px) {
+  .content-container {
+    padding: 32px 16px 64px 16px;
+  }
+}
 @media only screen and (max-width: 1200px) {
   .two-column-left .right, .two-column-left .left {
     width: 50%;

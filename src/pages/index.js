@@ -11,7 +11,7 @@ const BlogIndex = () => {
   return (
     <Layout>
       <SEO title="All posts" />
-      <div className="HomePage">
+      <div className="page HomePage">
         <Hero />
         <section className='content-container'>
             <div class='home'>
