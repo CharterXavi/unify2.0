@@ -12,7 +12,7 @@ const SpacingPage = () => {
       <div className='page SpacingPage'>
         <Header content='Spacing' icon={<RulerIcon />} />
         <section className="content-container">
-
+          
         </section>
       </div>
     </Layout>
