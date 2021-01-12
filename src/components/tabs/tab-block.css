@@ -1,0 +1,52 @@
+.TabBlock {
+    color: white;
+    width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: var(--standard-shadow);
+}
+.TabBlock .tab-bar {
+    display: flex;
+    width: 100%;
+    height: 50px;
+}
+.TabBlock .interface {
+    width: 100%;
+    background: white;
+    height: 600px;
+}
+.TabBlock .interface .design {
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+.TabBlock .interface .code {
+    width: 100%;
+    height: 100%;
+    display: none;
+    color: black;
+    padding: 16px;
+    box-sizing: border-box;
+}
+.TabBlock .tab-bar .tab {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+    background: var(--scrubs-blue);
+}
+.TabBlock .tab-bar .tab:hover  {
+    background: var(--heading-color);
+    cursor: pointer;
+}
+.TabBlock .tab-bar .tab.active {
+    background: var(--heading-color);
+}
+
+.TabBlock .interface .design.active-design {
+    display: inline-block;
+}
+.TabBlock .interface .code.active-code {
+    display: inline-block;
+}
