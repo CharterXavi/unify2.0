@@ -187,10 +187,21 @@ hr {
   transition: 0.3s ease all;
   height: 44px;
 }
+/* -- PrismJS styling for Tab Block component -- */
 pre[class*="language-"] {
   margin: 0;
   border-radius: 0;
   overflow: scroll;
+}
+
+/* -- Design and Code content blocks -- */
+.design-content,
+.code-content {
+    display: none;
+}
+.design-content.show,
+.code-content.show {
+    display: initial;
 }
 /* --- COLUMN WITH TEXT-LEFT --- */
 .two-column-left {

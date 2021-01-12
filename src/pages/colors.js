@@ -1,3 +1,5 @@
+import './colors.css'
+
 import ColorsIcon from '../components/icons/colors'
 import FooterNav from '../components/footer/footernav'
 import Header from '../components/header/header'
@@ -5,9 +7,11 @@ import Layout from "../components/layout"
 import React from "react"
 import SEO from "../components/seo"
 import TabBlock from '../components/tabs/tab-block'
+import {useState} from 'react';
 
 const ColorsPage = () => {
 
+  //Code for COLORS documentation
   const colorsCode = `
     :root {
       --primary-accent: #F22C57;
@@ -37,6 +41,22 @@ const ColorsPage = () => {
     }
   `.trim();
 
+    const [showDesignContent, setShowDesignContent] = useState(true);
+    const [showCodeContent, setShowCodeContent] = useState(false);
+    
+    const handleDesignContent = () => {
+      setShowDesignContent(true);
+      if(showCodeContent == true) {
+        setShowCodeContent(false);
+      }
+    }
+    const handleCodeContent = () => {
+      setShowCodeContent(true);
+      if(showDesignContent == true) {
+        setShowDesignContent(false);
+      }
+    }
+
   return (
     <Layout>
       <SEO title="Colors" />
@@ -47,7 +67,16 @@ const ColorsPage = () => {
             figmaLink='https://www.figma.com/embed?embed_host=share&amp;url=https%3A%2F%2Fwww.figma.com%2Ffile%2F0gRltFGyJQXtNrahIJTvem%2FGuidelines%3Fnode-id%3D6%253A20&amp;chrome=DOCUMENTATION'
             code={colorsCode}
             language='css'
+            showDesign={handleDesignContent}
+            showCode={handleCodeContent}
           />
+
+          <div className={`design-content ${showDesignContent ? 'show' : ''}`}>
+            DESIGN STUFF
+          </div>
+          <div className={`code-content ${showCodeContent ? 'show' : ''}`}>
+            CODE STUFF
+          </div>
         </section>
       </div>
 

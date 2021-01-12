@@ -6,6 +6,7 @@
     overflow: auto;
     box-shadow: var(--standard-shadow);
     box-sizing: border-box;
+    margin: 8px 0 16px 0;
 }
 .TabBlock .tab-bar {
     display: flex;
