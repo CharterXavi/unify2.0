@@ -46,6 +46,7 @@ const ColorsPage = () => {
           <TabBlock 
             figmaLink='https://www.figma.com/embed?embed_host=share&amp;url=https%3A%2F%2Fwww.figma.com%2Ffile%2F0gRltFGyJQXtNrahIJTvem%2FGuidelines%3Fnode-id%3D6%253A20&amp;chrome=DOCUMENTATION'
             code={colorsCode}
+            language='css'
           />
         </section>
       </div>

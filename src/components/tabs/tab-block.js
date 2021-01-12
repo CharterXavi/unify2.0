@@ -33,10 +33,10 @@ const TabBlock = (props) => {
                 <div className={`tab ${leftTabActive ? 'active' : ''}`} onClick={handleLeftClick}>Design</div>
                 <div className={`tab ${rightTabActive ? 'active' : ''}`}  onClick={handleRightClick}>Code</div>
             </div>
-            <div className='interface'>
+            <div className={`interface ${rightTabActive ? 'show-code' : 'show-design'}`}>
                 <iframe style={{border: '1px solid rgba(0, 0, 0, 0.1)'}} width="800" height="450" src={props.figmaLink} allowfullscreen="" className={`design ${leftTabActive ? 'active-design' : ''}`}></iframe>
                 <pre className={`code ${rightTabActive ? 'active-code' : ''}`}>
-                    <code className='language-jsx'>
+                    <code className={`language-${props.language}`}>
                         {props.code}
                     </code>
                 </pre>
