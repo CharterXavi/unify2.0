@@ -47,7 +47,7 @@ const TabBlock = (props) => {
                 <div className={`tab ${rightTabActive ? 'active' : ''}`}  onClick={handleRightClick}>🔨 Code</div>
             </div>
             <div className={`interface ${rightTabActive ? 'show-code' : 'show-design'}`}>
-                {loading ? (
+                {loading && leftTabActive ? (
                     <Spinner
                         className="loading text-center"
                         name="ball-pulse-sync"
