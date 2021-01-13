@@ -1,13 +1,15 @@
 import './colors.css'
 
+import CodeDocs from '../components/documentation/colors/code'
 import ColorsIcon from '../components/icons/colors'
+import DesignDocs from '../components/documentation/colors/design'
 import FooterNav from '../components/footer/footernav'
 import Header from '../components/header/header'
 import Layout from "../components/layout"
 import React from "react"
 import SEO from "../components/seo"
 import TabBlock from '../components/tabs/tab-block'
-import {useState} from 'react';
+import {useState} from 'react'
 
 const ColorsPage = () => {
 
@@ -72,10 +74,10 @@ const ColorsPage = () => {
           />
 
           <div className={`design-content ${showDesignContent ? 'show' : ''}`}>
-            DESIGN STUFF
+            <DesignDocs />
           </div>
           <div className={`code-content ${showCodeContent ? 'show' : ''}`}>
-            CODE STUFF
+            <CodeDocs />
           </div>
         </section>
       </div>

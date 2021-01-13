@@ -203,6 +203,9 @@ pre[class*="language-"] {
 .code-content.show {
     display: initial;
 }
+.text-block {
+  margin: 16px 0;
+}
 /* --- COLUMN WITH TEXT-LEFT --- */
 .two-column-left {
   max-width: 1000px;

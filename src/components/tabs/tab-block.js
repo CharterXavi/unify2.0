@@ -3,6 +3,7 @@ import './tab-block.css'
 import React, {useEffect, useState} from 'react'
 
 import Prism from 'prismjs'
+import Spinner from 'react-spinkit'
 
 const TabBlock = (props) => {
 
@@ -11,6 +12,7 @@ const TabBlock = (props) => {
         Prism.highlightAll()
     })
 
+    //Implement clickable tab feature, showing design iframe and content or code snippets and content
     const [ leftTabActive, setLeftTabActive ] = useState(true);
     const [ rightTabActive, setRightTabActive ] = useState(false);
 
@@ -29,13 +31,31 @@ const TabBlock = (props) => {
         props.showCode();
     }
 
+    //Implement loading animation for iframe loading
+    const [loading, setLoading] = useState(true);
+    const hideSpinner = () => {
+        setLoading(false);
+    }
+    useEffect(() => {
+        setTimeout(hideSpinner, 3000);
+    }, [])
+
     return (
         <div className='TabBlock'>
             <div className='tab-bar'>
-                <div className={`tab ${leftTabActive ? 'active' : ''}`} onClick={handleLeftClick}>Design</div>
-                <div className={`tab ${rightTabActive ? 'active' : ''}`}  onClick={handleRightClick}>Code</div>
+                <div className={`tab ${leftTabActive ? 'active' : ''}`} onClick={handleLeftClick}>✨ Design</div>
+                <div className={`tab ${rightTabActive ? 'active' : ''}`}  onClick={handleRightClick}>🔨 Code</div>
             </div>
             <div className={`interface ${rightTabActive ? 'show-code' : 'show-design'}`}>
+                {loading ? (
+                    <Spinner
+                        className="loading text-center"
+                        name="ball-pulse-sync"
+                        color="#F22C57"
+                        fadeIn="full"
+                    />
+                )
+                : null}
                 <iframe style={{border: '1px solid rgba(0, 0, 0, 0.1)'}} width="800" height="450" src={props.figmaLink} allowfullscreen="" className={`design ${leftTabActive ? 'active-design' : ''}`}></iframe>
                 <pre className={`code ${rightTabActive ? 'active-code' : ''}`}>
                     <code className={`language-${props.language}`}>

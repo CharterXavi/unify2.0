@@ -6,7 +6,7 @@
     overflow: auto;
     box-shadow: var(--standard-shadow);
     box-sizing: border-box;
-    margin: 8px 0 16px 0;
+    margin: 8px 0 64px 0;
 }
 .TabBlock .tab-bar {
     display: flex;
@@ -16,12 +16,18 @@
 }
 .TabBlock .interface {
     width: 100%;
-    background: white;
     height: 700px;
     box-sizing: border-box;
+    position: relative;
 }
 .TabBlock .code-toolbar {
     height: 100%;
+}
+.TabBlock .interface .loading {
+    position: absolute;
+    top: 45%;
+    left: calc(50% - 24px);
+    z-index: 100;
 }
 .TabBlock .interface .design {
     width: 100%;
@@ -39,6 +45,7 @@
 }
 .TabBlock .interface.show-code {
     overflow: scroll;
+    background: black;
 }
 .TabBlock .interface.show-design {
     overflow: hidden;
