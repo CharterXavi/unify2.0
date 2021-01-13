@@ -87,14 +87,6 @@ const GuidelinesPage = () => {
                 </div>
               </div>
             </div>
-            <h6>Figma</h6>
-            <p>
-              UNIFY's design components live in Figma, a popular modern design tool. 
-              You'll notice that this web application uses many embedded pieces of the designs, all directly from Figma.
-              This allows for a highly dynamic design experience. Any changes to the system's master components by
-              designers in our Figma boards will automatically trickle down to this web application in real time, so changes there instantly update here.
-              The full Figma board can be accessed view-only by visiting this link.
-            </p>
           </div>
           <FooterNav 
             prevLink='/'
