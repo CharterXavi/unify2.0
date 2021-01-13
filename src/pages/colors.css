@@ -1,0 +1,8 @@
+.ColorsPage .design-content,
+.ColorsPage .code-content {
+    display: none;
+}
+.ColorsPage .design-content.show,
+.ColorsPage .code-content.show {
+    display: initial;
+}
