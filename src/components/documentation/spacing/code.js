@@ -13,21 +13,25 @@ const CodeDocs = () => {
             </div>
             <div className="content">
                 <div className="left">
-                    <h5>Color Variables</h5>
+                    <h5>Inset Spacing</h5>
                     <p>
-                        The color variables currently store color hex codes. These variables can be used as text colors, background colors, etc. since hex codes are supported for various CSS properties.
+                        To implement XS, S, M, L, XL sizes of spacing, we can store those properties as variables which contain pixel values of 4, 8, 16, 32, and 64 respectively. These 5 variables 
+                        can then be used on containers and other elements with CSS padding properties. 
                     </p>
-                    <h5>Gradient Variables</h5>
+                    <h5>Inset Squish Spacing</h5>
                     <p>
-                        The gradient variables are stored as linear-gradient properties which can be used as backgrounds but not as text-colors. Clip-path properties can be used to 
-                        implement gradients as text (see the source code for the heading on this very page), but browser support should be considered. 
+                        For inset squish spacing, we can repeat the process above for Inset Spacing, but assigning a variable that holds two pixel values instead of one: a top/bottom pixel value and a left/right pixel value.
+                    </p>
+                    <p>
+                        For example, if we wanted to implement small (S) sized inset squish spacing, we'd declare a CSS variable as such: --squish-small: 4px 8px;
+                        Using this variable and its stored value on a CSS padding property provides 4px padding on the top and bottom, with 8px padding on the left and right of a given element, to give us the S inset squish spacing.
                     </p>
                 </div>
                 <div className="right">
-                    <h5>Box Shadow Variables</h5>
+                    <h5>Element spacing</h5>
                     <p>
-                        The box shadow variables are stored per usual syntax, but with rgba() values for the shadow color and opacity vs. other color coding conventions. Using any of these variables
-                        with the box-shadow CSS property should render nice, clean shadows for any specified element.
+                        The beauty of CSS Variables shines through here as we implement these different spacing sizes. Since we've already declared CSS variables for the same pixel sizes, we can simply call these 
+                        same variables on the CSS 'margin' properties for a given element. This gives us space between elements vs within elements/containers using padding in the 'inset' examples.
                     </p>
                 </div>
             </div>

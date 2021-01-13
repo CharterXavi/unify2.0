@@ -1,5 +1,12 @@
 export const typographyCode = `
 /* --- Typography styles --- */
+  body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-family: 'Nunito', sans-serif;
+    font-size: 17px;
+  }
   h1, h2, h4, h5, h6 {
     font-family: 'Nunito', sans-serif;
     text-align: left;

@@ -2,7 +2,7 @@ import React from 'react'
 
 const DesignDocs = () => {
     return (
-        <div className="CodeDocs two-column">
+        <div className="DesignDocs two-column">
             <div className="title">
                 <h3>Buttons - ✨ Design</h3>
                 <p>
