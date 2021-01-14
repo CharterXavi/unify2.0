@@ -1,4 +1,4 @@
-export const formsCode = `
+export const formCode = `
 //FORM COMPONENT
     import './form.css'
     import React from 'react'
