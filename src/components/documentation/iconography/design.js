@@ -6,42 +6,32 @@ const DesignDocs = () => {
             <div className="title">
                 <h3>Iconography - ✨ Design</h3>
                 <p>
-                    Our digital color palette is directly derived from our existing brand color scheme.
-                    Previously, Charter utilized pink shades with earthy-brown tones as background colors, occasionally drawing on white backgrounds as well.
-                    This color scheme will focus on black, dark navy, and white, with pink primary accents and blue secondary accents. 
-                    This color palette change should serve to better modernize our digital products and tie them into a more common healthcare experience.
+                    Icons are an essential piece of the design puzzle. Icons should serve to communicate a concept or a message to our users,
+                    with as little cognitive load as possible. In other words: they should help users identify a component's purpose at a glance.
                 </p>
                 <hr/>
             </div>
             <div className="content">
                 <div className="left">
-                    <h5>Background Colors</h5>
+                    <h5>A visual hint</h5>
                     <p>
-                    Background colors should not only be aesthetically pleasing - they should provide proper contrast with their child elements and text content.
-                    Black serves as a powerful high-contrast background, and white will provide this same effect as a light background.
-                    For interesting stylistic changes, a dark navy can be used as an alternative dark background.
-                    Blues are overwhelmingly common in the healthcare space, so this may provide a break from the black/white background styles while providing
-                    the user with familiarity in their healthcare experience.
+                        These phone icons, for example, allow users to quickly identify where they may be able to access a phone number to call in.
+                        This is how icons should be used - to help users very easily navigate to important things in our digital spaces. Care should
+                        be taken not to use obscure icons with potentially ambiguous significance. Note as well that our icon designs follow our color
+                        scheme in a similar fashion to our buttons and other important visual components.                    
                     </p>
-                    <h5>Text Colors</h5>
                     <p>
-                    Text's primary purpose is to be readable. All text should properly contrast with its background, so black and white text makes the most sense.
-                    Occasionally, dark navy may be used as a secondary heading color. A vibrant pink may be used as a stylistic heading color as long as it maintains a proper contrast ratio.
-                    </p>
-                    <h5>Button Colors</h5>
-                    <p>
-                    Button colors should utilize vibrancy to attract the users attention, but this vibrancy should also maintain proper contrast ratios with its background for visibility.
-                    Buttons should draw the user's attention to important site links and pages while adding stylistic flair to the page.
+                        Finally, if using an icon as a button or link, accompanying text or explanation may be necessary to make sure the intent is
+                        clear for the user. Generally, this practice should be avoided however.
                     </p>
                 </div>
                 <div className="right">
-                    <h5>Gradients</h5>
+                    <h5>Custom Icons vs. 3rd Party Icons</h5>
                     <p>
-                    Gradients allow for stylistic nuances that can be leveraged to increase the UX with a more immersive color experience.
-                    Pink gradients with varying warmth can be used to draw user attention to different aspects of the digital product in a way that is stytlistically rooted in the brand
-                    color palette. Having a blue gradient offers us a way to utilize secondary colors that are familiar to the user in the healthcare sphere.
-                    The gradients may be used as alternative styles in buttons, text, element backgrounds, and more. Like other color use, be sure to use gradients responsibly with
-                    proper contrast ratios for user accessibility.
+                        There are vast 3rd party libraries available for icons, and most of them are completely free to use commercially. For
+                        this reason, we may not want to reinvent the wheel. That being said, having our own icon library could help increaes our
+                        brand signature, as they will be specific to our software designs. In either case, icon styles should adhere as closely as
+                        possible to our color palette and purpose.
                     </p>
                 </div>
             </div>

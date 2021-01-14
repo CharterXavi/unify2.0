@@ -33,6 +33,11 @@ const GuidelinesPage = () => {
               <h4>Important Elements of UNIFY</h4>
               <hr/>
             </div>
+            <h6>Design / Code</h6>
+            <p>
+              UNIFY is the home to documentation on both design and code for the components of our design system. Each page contains a tabbable component at the top, where you can filter between seeing the designe
+              as well as seeing the code for a given design component. Note as well that switching those tabs will also dispaly different documentation beneath - the design docs or the code docs. Try it out!
+            </p>
             <h6>Figma</h6>
             <p>
               UNIFY's design components live in Figma, a popular modern design tool. 

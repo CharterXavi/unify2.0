@@ -188,6 +188,13 @@ hr {
   transition: 0.3s ease all;
   height: 44px;
 }
+.code-span {
+  font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+  color: white;
+  background: var(--heading-color);
+  border-radius: 10px;
+  padding: 0 8px;
+}
 /* -- PrismJS styling for Tab Block component -- */
 pre[class*="language-"] {
   margin: 0;

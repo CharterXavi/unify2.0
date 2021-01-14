@@ -6,28 +6,29 @@ const CodeDocs = () => {
             <div className="title">
                 <h3>Buttons - 🔨 Code</h3>
                 <p>
-                    Our digital color palette is meant to be implemented at the highest level stylesheet. In our React/Gatsby software, this would be the layout.css file in the src/components directory.
-                    CSS Variables are currently used to store the color hex codes, linear gradients, or box shadows so they can easily be recalled using 'color: var(--color-name);' syntax. 
+                    The code for our buttons differs by mere classNames. The structure of the button component is the same across each button while their design changes in CSS.
                 </p>
                 <hr/>
             </div>
             <div className="content">
                 <div className="left">
-                    <h5>Color Variables</h5>
+                    <h5>Button Props</h5>
                     <p>
-                        The color variables currently store color hex codes. These variables can be used as text colors, background colors, etc. since hex codes are supported for various CSS properties.
+                        All of the button components accept a handful of potential props. 
                     </p>
-                    <h5>Gradient Variables</h5>
-                    <p>
-                        The gradient variables are stored as linear-gradient properties which can be used as backgrounds but not as text-colors. Clip-path properties can be used to 
-                        implement gradients as text (see the source code for the heading on this very page), but browser support should be considered. 
-                    </p>
+                    <ul>
+                        <li><span className='code-span'>link</span> - this is the link or relative path to which a click of the button should send a user - in the form of a String.</li>
+                        <li><span className='code-span'>content</span> - the name of the button, or rather what text appears within the button.</li>
+                        <li><span className='code-span'>download</span> - include a download prop with the boolean value of 'true' to use a button as a download button. Be sure to include a relative path to the file you're allowing the user to download on click.</li>
+                        <li><span className='code-span'>animation</span> - buttons are rigged up to accept AOS animations (on scroll). If you want an animation, simply add a valid Data-AOS animation attribute name as a String.</li>
+                        <li><span className='code-span'>animationTime</span> - if you include an animation, you may also want to customize the animation duration. Include this prop with a Number as a String in miliseconds (where 3000ms = 3s).</li>
+                    </ul>
                 </div>
                 <div className="right">
-                    <h5>Box Shadow Variables</h5>
+                    <h5>Button Styling</h5>
                     <p>
-                        The box shadow variables are stored per usual syntax, but with rgba() values for the shadow color and opacity vs. other color coding conventions. Using any of these variables
-                        with the box-shadow CSS property should render nice, clean shadows for any specified element.
+                        Primary Buttons utilize <span className='code-span'>::before</span> pseudoselectors and <span className='code-span'>opacity</span> properties to simulate a cool gradient on hover. The other buttons use pseudoselectors as well but have a much
+                        more subtle background hover animation. 
                     </p>
                 </div>
             </div>

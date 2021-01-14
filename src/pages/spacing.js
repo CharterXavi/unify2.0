@@ -17,13 +17,13 @@ const SpacingPage = () => {
   
   const handleDesignContent = () => {
     setShowDesignContent(true);
-    if(showCodeContent == true) {
+    if(showCodeContent === true) {
       setShowCodeContent(false);
     }
   }
   const handleCodeContent = () => {
     setShowCodeContent(true);
-    if(showDesignContent == true) {
+    if(showDesignContent === true) {
       setShowDesignContent(false);
     }
   }
