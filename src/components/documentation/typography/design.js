@@ -6,42 +6,32 @@ const DesignDocs = () => {
             <div className="title">
                 <h3>Typography - ✨ Design</h3>
                 <p>
-                    Our digital color palette is directly derived from our existing brand color scheme.
-                    Previously, Charter utilized pink shades with earthy-brown tones as background colors, occasionally drawing on white backgrounds as well.
-                    This color scheme will focus on black, dark navy, and white, with pink primary accents and blue secondary accents. 
-                    This color palette change should serve to better modernize our digital products and tie them into a more common healthcare experience.
+                Typography should be designed with two things in mind primarily:
+                    <ul>
+                        <li>Communicating Content (Readability)</li>
+                        <li>Communicating the Brand (Style)</li>
+                    </ul>
                 </p>
                 <hr/>
             </div>
             <div className="content">
                 <div className="left">
-                    <h5>Background Colors</h5>
+                    <h5>Communicating content (Readability)</h5>
                     <p>
-                    Background colors should not only be aesthetically pleasing - they should provide proper contrast with their child elements and text content.
-                    Black serves as a powerful high-contrast background, and white will provide this same effect as a light background.
-                    For interesting stylistic changes, a dark navy can be used as an alternative dark background.
-                    Blues are overwhelmingly common in the healthcare space, so this may provide a break from the black/white background styles while providing
-                    the user with familiarity in their healthcare experience.
-                    </p>
-                    <h5>Text Colors</h5>
-                    <p>
-                    Text's primary purpose is to be readable. All text should properly contrast with its background, so black and white text makes the most sense.
-                    Occasionally, dark navy may be used as a secondary heading color. A vibrant pink may be used as a stylistic heading color as long as it maintains a proper contrast ratio.
-                    </p>
-                    <h5>Button Colors</h5>
-                    <p>
-                    Button colors should utilize vibrancy to attract the users attention, but this vibrancy should also maintain proper contrast ratios with its background for visibility.
-                    Buttons should draw the user's attention to important site links and pages while adding stylistic flair to the page.
+                        Font styles and typography should primarily serve to present content in the most readable way possible.
+                        If the user cannot properly read the text on a page, it's virtually useless. Thus, a readable font that is designed
+                        to be legible at a variety of different sizes (headings, body text, form placeholders, etc.) is imperative in our typography guide.
+                        For our specific styles, a sans-serif font (Quicksand) has been applied, as its simple character structures have great readability
+                        at many sizes. Heading sizes, along with the other font styles, are carefully selected to be readable on the desktop as well as on mobile devices.
                     </p>
                 </div>
                 <div className="right">
-                    <h5>Gradients</h5>
+                    <h5>Communicating the brand (Style)</h5>
                     <p>
-                    Gradients allow for stylistic nuances that can be leveraged to increase the UX with a more immersive color experience.
-                    Pink gradients with varying warmth can be used to draw user attention to different aspects of the digital product in a way that is stytlistically rooted in the brand
-                    color palette. Having a blue gradient offers us a way to utilize secondary colors that are familiar to the user in the healthcare sphere.
-                    The gradients may be used as alternative styles in buttons, text, element backgrounds, and more. Like other color use, be sure to use gradients responsibly with
-                    proper contrast ratios for user accessibility.
+                        Secondary to readability, fonts should serve to communicate our brand as well. Many different styles exist,
+                        from ornate cursive script fonts to simple sans-serif fonts. Some of these styles may work better to communicate
+                        brand principles than others. For our font, Quicksand Regular was chosen not only for its aforementioned readability, but
+                        also because its simplistic, rounded characters convey friendliness, sincerety, cleanliness, and modernity.
                     </p>
                 </div>
             </div>

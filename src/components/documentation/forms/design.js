@@ -6,42 +6,44 @@ const DesignDocs = () => {
             <div className="title">
                 <h3>Forms - ✨ Design</h3>
                 <p>
-                    Our digital color palette is directly derived from our existing brand color scheme.
-                    Previously, Charter utilized pink shades with earthy-brown tones as background colors, occasionally drawing on white backgrounds as well.
-                    This color scheme will focus on black, dark navy, and white, with pink primary accents and blue secondary accents. 
-                    This color palette change should serve to better modernize our digital products and tie them into a more common healthcare experience.
+                    Form elements are tricky. Each input field requires its own style rules, and they must all also work together in the big picture to create a usable,
+                    understandable, and beautiful form experience for the user. They're also an extremely important functional piece of a website, as they often serve as
+                    the primary way users can reach out directly to us!
+                </p>
+                <p>
+                    Above are three different possible form designs, each including a design for each type of form input / input state (like when there might be an error
+                    in the user's information, a forgotten field, a disabled input, a dropdown selection, etc.). Having the option to put the form against a dark or
+                    light background offers us more versatility in our front end software design.
                 </p>
                 <hr/>
             </div>
             <div className="content">
                 <div className="left">
-                    <h5>Background Colors</h5>
+                    <h5>Breaking down the form</h5>
                     <p>
-                    Background colors should not only be aesthetically pleasing - they should provide proper contrast with their child elements and text content.
-                    Black serves as a powerful high-contrast background, and white will provide this same effect as a light background.
-                    For interesting stylistic changes, a dark navy can be used as an alternative dark background.
-                    Blues are overwhelmingly common in the healthcare space, so this may provide a break from the black/white background styles while providing
-                    the user with familiarity in their healthcare experience.
+                        For this example, let's consider the Alt Light Theme in the above design:
                     </p>
-                    <h5>Text Colors</h5>
-                    <p>
-                    Text's primary purpose is to be readable. All text should properly contrast with its background, so black and white text makes the most sense.
-                    Occasionally, dark navy may be used as a secondary heading color. A vibrant pink may be used as a stylistic heading color as long as it maintains a proper contrast ratio.
-                    </p>
-                    <h5>Button Colors</h5>
-                    <p>
-                    Button colors should utilize vibrancy to attract the users attention, but this vibrancy should also maintain proper contrast ratios with its background for visibility.
-                    Buttons should draw the user's attention to important site links and pages while adding stylistic flair to the page.
-                    </p>
+                    <ul>
+                        <li>The heading is a <span className='code-span'>h2</span> in our <span className='code-span'>--primary-accent</span> color . This grabs the users' attention with our signature color.</li>
+                        <li>The text beneath is in our Introductory Text Typography, sporting the <span className='code-span'>--heading-color</span> color.</li>
+                        <li>
+                            The first input is a default state input. This is what each input should look like in most cases, ready to accept user input.
+                            This text is in a special Placeholder Text style, as are all the other inputs for consistency.
+                        </li>
+                        <li>
+                            Next up is a disabled input. Disabled inputs may be fields in which the user should not be allowed to edit its value, but it should be
+                            readable and viewable nonetheless. For example, if a user enters their birthdate, maybe a field automatically calculates their age.
+                            This field may be a good use case for a disabled field, in which the info should be available but not directly editable.
+                        </li>
+                        <li>Error state inputs should be attention-grabbing so users can be directed to information in need of correction with a minimal cognitive load.</li>
+                        <li>The text area should be large enough for the user to be able to enter and view a message with adequate length.</li>
+                        <li>Finally, the submit button is a Primary Button component from our system, designed to be highly visible and clickable.</li>
+                    </ul>
                 </div>
                 <div className="right">
-                    <h5>Gradients</h5>
+                    <h5>Form summary</h5>
                     <p>
-                    Gradients allow for stylistic nuances that can be leveraged to increase the UX with a more immersive color experience.
-                    Pink gradients with varying warmth can be used to draw user attention to different aspects of the digital product in a way that is stytlistically rooted in the brand
-                    color palette. Having a blue gradient offers us a way to utilize secondary colors that are familiar to the user in the healthcare sphere.
-                    The gradients may be used as alternative styles in buttons, text, element backgrounds, and more. Like other color use, be sure to use gradients responsibly with
-                    proper contrast ratios for user accessibility.
+                        All in all, the form design and its many pieces should serve to give users the easiest, most pleasant experience in reaching out to us. Note that all of the form elements come together per our spacing guidelines, color guidelines, font guidelines, and more. This demonstrates the power of this design system!
                     </p>
                 </div>
             </div>

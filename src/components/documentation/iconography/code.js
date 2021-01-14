@@ -6,28 +6,28 @@ const CodeDocs = () => {
             <div className="title">
                 <h3>Iconography - 🔨 Code</h3>
                 <p>
-                    Our digital color palette is meant to be implemented at the highest level stylesheet. In our React/Gatsby software, this would be the layout.css file in the src/components directory.
-                    CSS Variables are currently used to store the color hex codes, linear gradients, or box shadows so they can easily be recalled using 'color: var(--color-name);' syntax. 
+                    Our icons are custom SVGs designed in Figma. From there, they are outfitted into simple, reusable React components that can be imported
+                    into any parent component or page. This makes for a highly flexible and scalable custom icon set that we can change and improve upon
+                    with ease.
                 </p>
                 <hr/>
             </div>
             <div className="content">
                 <div className="left">
-                    <h5>Color Variables</h5>
+                    <h5>SVGs as React Components</h5>
                     <p>
-                        The color variables currently store color hex codes. These variables can be used as text colors, background colors, etc. since hex codes are supported for various CSS properties.
-                    </p>
-                    <h5>Gradient Variables</h5>
-                    <p>
-                        The gradient variables are stored as linear-gradient properties which can be used as backgrounds but not as text-colors. Clip-path properties can be used to 
-                        implement gradients as text (see the source code for the heading on this very page), but browser support should be considered. 
+                        There are many different ways to implement a custom icon set. Choosing to implement them as SVG-based React components was an effort to strike
+                        a balance between design and development efficiency. It's important to note as well that all of the SVG componenets use filter and paint-linear IDs 
+                        containing the name of the SVG icon. This is important as default Figma SVG exports use paint-linear and filter attribute ID names that would 
+                        otherwise overlap and cause issues in the rendering of the SVGs as many are rendered on a single page.              
                     </p>
                 </div>
                 <div className="right">
-                    <h5>Box Shadow Variables</h5>
+                    <h5>Coming soon</h5>
                     <p>
-                        The box shadow variables are stored per usual syntax, but with rgba() values for the shadow color and opacity vs. other color coding conventions. Using any of these variables
-                        with the box-shadow CSS property should render nice, clean shadows for any specified element.
+                        Soon, the full icon set will be available for download in a few different file formats (.svg, .png, etc.) all from this page in UNIFY. We recommend
+                        the implementation outlined in these docs (SVG icons as React components) until further notice, but for other use cases these icons will soon be available.
+                        Stay tuned!
                     </p>
                 </div>
             </div>

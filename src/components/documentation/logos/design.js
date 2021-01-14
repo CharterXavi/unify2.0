@@ -6,42 +6,31 @@ const DesignDocs = () => {
             <div className="title">
                 <h3>Logo - ✨ Design</h3>
                 <p>
-                    Our digital color palette is directly derived from our existing brand color scheme.
-                    Previously, Charter utilized pink shades with earthy-brown tones as background colors, occasionally drawing on white backgrounds as well.
-                    This color scheme will focus on black, dark navy, and white, with pink primary accents and blue secondary accents. 
-                    This color palette change should serve to better modernize our digital products and tie them into a more common healthcare experience.
+                    The Charter Logo is the key embodiment of brand identity. We imagined the Charter Compass as the symbol of what it is we do on a daily basis: help people navigate post-acute care.
+                    Whether that be the payors and providers who need to know their patients are in good hands after discharge from the hospital or acute care setting, or whether that be the patients
+                    and their families navigating the intricacies of post-acute and/or end-of-life care journies - we're there to help.
                 </p>
                 <hr/>
             </div>
             <div className="content">
                 <div className="left">
-                    <h5>Background Colors</h5>
+                    <h5>The Compass symbol</h5>
                     <p>
-                    Background colors should not only be aesthetically pleasing - they should provide proper contrast with their child elements and text content.
-                    Black serves as a powerful high-contrast background, and white will provide this same effect as a light background.
-                    For interesting stylistic changes, a dark navy can be used as an alternative dark background.
-                    Blues are overwhelmingly common in the healthcare space, so this may provide a break from the black/white background styles while providing
-                    the user with familiarity in their healthcare experience.
+                        The Charter Compass takes the primary shape of a 'C' for Charter, while tactfully baking in the face of a compass and a compass needle. This symbol is simple, inspired by some very
+                        famous minimalistic logos, like Apple, Target, Google, etc.
                     </p>
-                    <h5>Text Colors</h5>
+                    <h5>Color Scheme</h5>
                     <p>
-                    Text's primary purpose is to be readable. All text should properly contrast with its background, so black and white text makes the most sense.
-                    Occasionally, dark navy may be used as a secondary heading color. A vibrant pink may be used as a stylistic heading color as long as it maintains a proper contrast ratio.
-                    </p>
-                    <h5>Button Colors</h5>
-                    <p>
-                    Button colors should utilize vibrancy to attract the users attention, but this vibrancy should also maintain proper contrast ratios with its background for visibility.
-                    Buttons should draw the user's attention to important site links and pages while adding stylistic flair to the page.
+                        Our final logo color scheme is a play on a complementary color theory system, but with some tweaks to fine tune it as a proper derivative of our color palette. Our vibrant pink accent
+                        stands out and hearkens to the old Charter pink color scheme, while the light and dark navy blues tie in common colors from the healthcare industry.
                     </p>
                 </div>
                 <div className="right">
-                    <h5>Gradients</h5>
+                    <h5>Logo Text</h5>
                     <p>
-                    Gradients allow for stylistic nuances that can be leveraged to increase the UX with a more immersive color experience.
-                    Pink gradients with varying warmth can be used to draw user attention to different aspects of the digital product in a way that is stytlistically rooted in the brand
-                    color palette. Having a blue gradient offers us a way to utilize secondary colors that are familiar to the user in the healthcare sphere.
-                    The gradients may be used as alternative styles in buttons, text, element backgrounds, and more. Like other color use, be sure to use gradients responsibly with
-                    proper contrast ratios for user accessibility.
+                        The logo text uses the Dosis font family with a 10% kerning (space between letters). The capitalization was chosen to convey authority and establish a context of strength and reliability. 
+                        The font color differs between the dark navy and the white depending on the background use case for maximum accessibility. The 'healthcare' font is in our classic Charter pink
+                        primary accent for brand recognition and for a feeling of compassion and comfort.
                     </p>
                 </div>
             </div>

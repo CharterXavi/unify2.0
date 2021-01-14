@@ -18,14 +18,14 @@ const TabBlock = (props) => {
 
     const handleLeftClick = () => {
         setLeftTabActive(true);
-        if(rightTabActive == true) {
+        if(rightTabActive === true) {
             setRightTabActive(!rightTabActive);
         }
         props.showDesign();
     }
     const handleRightClick = () => {
         setRightTabActive(true);
-        if(leftTabActive == true) {
+        if(leftTabActive === true) {
             setLeftTabActive(!leftTabActive);
         }
         props.showCode();

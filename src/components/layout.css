@@ -140,6 +140,7 @@ hr {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  box-sizing: border-box;
 }
 .page h4,
 .page h5,
@@ -187,6 +188,13 @@ hr {
   transition: 0.3s ease all;
   height: 44px;
 }
+.code-span {
+  font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+  color: white;
+  background: var(--heading-color);
+  border-radius: 10px;
+  padding: 0 8px;
+}
 /* -- PrismJS styling for Tab Block component -- */
 pre[class*="language-"] {
   margin: 0;
@@ -198,13 +206,12 @@ pre[class*="language-"] {
 .design-content,
 .code-content {
     display: none;
+    box-sizing: border-box;
 }
 .design-content.show,
 .code-content.show {
     display: initial;
-}
-.text-block {
-  margin: 16px 0;
+    box-sizing: border-box;
 }
 /* --- COLUMN WITH TEXT-LEFT --- */
 .two-column-left {
@@ -375,9 +382,11 @@ pre[class*="language-"] {
   .two-column-left .right {
     flex-direction: column;
     width: 100%;
+    padding: 0;
   }
   .two-column-left .left {
     width: 100%;
+    padding: 0;
   }
 
   /* --- COLUMN WITH TEXT-RIGHT --- */
@@ -388,15 +397,18 @@ pre[class*="language-"] {
   .two-column-right .right {
     flex-direction: column;
     width: 100%;
+    padding: 0;
   }
   .two-column-right .left {
     width: 100%;
+    padding: 0;
   }
 
   /* --- COLUMN WITH TEXT IN BOTH --- */
   .two-column {
     flex-direction: column;
     width: 100%;
+    padding: 0;
   }
   .two-column .left, .two-column .right {
     width: 100%;

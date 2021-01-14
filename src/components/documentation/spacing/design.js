@@ -6,42 +6,53 @@ const DesignDocs = () => {
             <div className="title">
                 <h3>Spacing - ✨ Design</h3>
                 <p>
-                    Our digital color palette is directly derived from our existing brand color scheme.
-                    Previously, Charter utilized pink shades with earthy-brown tones as background colors, occasionally drawing on white backgrounds as well.
-                    This color scheme will focus on black, dark navy, and white, with pink primary accents and blue secondary accents. 
-                    This color palette change should serve to better modernize our digital products and tie them into a more common healthcare experience.
+                    Spacing is an important and challenging aspect of digital design. Much like other elements of a design system,
+                    the way you utilize space can have a big impact on readability. It's crucial to space elements out on a page in a systematic way.
+                    If a user visits one page where different components are spaced quite generously, and then they visit another page with tighter
+                    margins and padding between elements, it can increase the cognitive load required to comfortably navigate the site, if even on a
+                    subconscious level. Or even worse - maybe similar elements on the same page have inconsistent spacing altogether, cheapening the
+                    overall design and hindering the user experience. For these reasons, we'll implement a more methodical approach to space on our
+                    pages to create organization that's reproducable.
                 </p>
                 <hr/>
             </div>
             <div className="content">
                 <div className="left">
-                    <h5>Background Colors</h5>
+                    <h5>Inset Spacing</h5>
                     <p>
-                    Background colors should not only be aesthetically pleasing - they should provide proper contrast with their child elements and text content.
-                    Black serves as a powerful high-contrast background, and white will provide this same effect as a light background.
-                    For interesting stylistic changes, a dark navy can be used as an alternative dark background.
-                    Blues are overwhelmingly common in the healthcare space, so this may provide a break from the black/white background styles while providing
-                    the user with familiarity in their healthcare experience.
+                        This describes spacing inside of a given element and/or a container that may encapsulate many other elements.
+                        It pertains to the space from the boundaries to the content within. A good example might be a card or contact form.
+                        To ensure consistent inner boundaries, we may want to apply inset spacing on the parent element so the contents inside are aligned properly.
+                        The space inside of an element or element container can vary, and providing a selection of inset spacing to choose from helps
+                        diversify the design while keeping it consistent. Not all elements require the same inset spacing, so these options are needed.
+                        To simplify these options, we're classifying them in a familiar way: Extra Small (XS), Small (S), Medium (M), Large (L), and
+                        Extra Large (XL). By mimicking standard T-shirt sizes, we create an easily memorizable set of inset spacing options.
+                        In fact, it's so efficient we'll apply it to each spacing rule!
                     </p>
-                    <h5>Text Colors</h5>
+                    <h5>Inset Squish Spacing</h5>
                     <p>
-                    Text's primary purpose is to be readable. All text should properly contrast with its background, so black and white text makes the most sense.
-                    Occasionally, dark navy may be used as a secondary heading color. A vibrant pink may be used as a stylistic heading color as long as it maintains a proper contrast ratio.
-                    </p>
-                    <h5>Button Colors</h5>
-                    <p>
-                    Button colors should utilize vibrancy to attract the users attention, but this vibrancy should also maintain proper contrast ratios with its background for visibility.
-                    Buttons should draw the user's attention to important site links and pages while adding stylistic flair to the page.
+                        What we're calling 'Inset Squish Spacing' is just a fancy name for a similar concept. Now we're talking about the spacing within
+                        what is usually going to be a single element on a page. This spacing style is best suited for rectangular, horizontal elements on
+                        a page, like form inputs, buttons, etc. The options here will simply include Small (S), Medium (M), and Large (L), as this is a
+                        more minute type of spacing.
                     </p>
                 </div>
                 <div className="right">
-                    <h5>Gradients</h5>
+                    <h5>Stacked Element Spacing</h5>
                     <p>
-                    Gradients allow for stylistic nuances that can be leveraged to increase the UX with a more immersive color experience.
-                    Pink gradients with varying warmth can be used to draw user attention to different aspects of the digital product in a way that is stytlistically rooted in the brand
-                    color palette. Having a blue gradient offers us a way to utilize secondary colors that are familiar to the user in the healthcare sphere.
-                    The gradients may be used as alternative styles in buttons, text, element backgrounds, and more. Like other color use, be sure to use gradients responsibly with
-                    proper contrast ratios for user accessibility.
+                        Stacked elements are just that: elements stacked on top of each other consecutively in a block. Since this usually concerns
+                        larger elements on a page (like content blocks and whatnot) we're going to bring back our XS- XL sizing options. It's important to note
+                        that our spacing in this instance doesn't include left and right side spacing, but rather top and bottom spacing. This is because the 
+                        lateral spacing is usually addressed by the parent container of these stacked elements, per the Inset Spacing rules. Neat!
+                    </p>
+                    <h5>Inline Element Spacing</h5>
+                    <p>
+                        Finally, we have our last type of spacing: inline spacing. This applies when two elements are right next to each other consecutively.
+                        We'll want to make sure elements don't just line up nice vertically, but horizontally as well. We're essentially applying the same
+                        rules as the Stacked Elements but in the horizontal plane, with the same XS - XL options. This reinforces the system we're implementing
+                        and keeps it simple! Notice here that we don't define top and bottom spacing for these elements. That is because the container of
+                        these inline elements will have its own spacing on each edge, and if these elements are part of a vertical stack the vertical spacing
+                        rules will cover it. It all works together if used properly.
                     </p>
                 </div>
             </div>

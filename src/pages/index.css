@@ -10,3 +10,6 @@
     font-weight: bolder;
     color: var(--primary-accent);
 }
+.HomePage .home p#home {
+    height: 60px;
+}

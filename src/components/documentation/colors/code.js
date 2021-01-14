@@ -7,7 +7,7 @@ const CodeDocs = () => {
                 <h3>Charter Color Palette - 🔨 Code</h3>
                 <p>
                     Our digital color palette is meant to be implemented at the highest level stylesheet. In our React/Gatsby software, this would be the layout.css file in the src/components directory.
-                    CSS Variables are currently used to store the color hex codes, linear gradients, or box shadows so they can easily be recalled using 'color: var(--color-name);' syntax. 
+                    CSS Variables are currently used to store the color hex codes, linear gradients, or box shadows so they can easily be recalled using <span className='code-span'>color: var(--color-name);</span> syntax. 
                 </p>
                 <hr/>
             </div>
@@ -19,15 +19,15 @@ const CodeDocs = () => {
                     </p>
                     <h5>Gradient Variables</h5>
                     <p>
-                        The gradient variables are stored as linear-gradient properties which can be used as backgrounds but not as text-colors. Clip-path properties can be used to 
+                        The gradient variables are stored as <span className='code-span'>linear-gradient</span> properties which can be used as backgrounds but not as text-colors. <span className='code-span'>Clip-path</span> properties can be used to 
                         implement gradients as text (see the source code for the heading on this very page), but browser support should be considered. 
                     </p>
                 </div>
                 <div className="right">
                     <h5>Box Shadow Variables</h5>
                     <p>
-                        The box shadow variables are stored per usual syntax, but with rgba() values for the shadow color and opacity vs. other color coding conventions. Using any of these variables
-                        with the box-shadow CSS property should render nice, clean shadows for any specified element.
+                        The box shadow variables are stored per usual syntax, but with <span className='code-span'>rgba();</span> values for the shadow color and opacity vs. other color coding conventions. Using any of these variables
+                        with the <span className='code-span'>box-shadow</span> CSS property should render nice, clean shadows for any specified element.
                     </p>
                 </div>
             </div>
