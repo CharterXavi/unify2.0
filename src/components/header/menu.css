@@ -46,7 +46,7 @@
     min-height: 75px;
 }
 .Menu ul li a:hover {
-    background: black;
+    background: rgba(250,250,250,0.1);
 }
 .Menu .plus-sign {
     width: 25px;
@@ -70,5 +70,16 @@
         left: 60%;
         width: 23px;
         height: 23px;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .Menu ul li a:hover {
+        background: black;
+    }
+    .Menu ul li {
+        min-height: 65px;
+    }
+    .Menu ul li a {
+        min-height: 65px;
     }
 }

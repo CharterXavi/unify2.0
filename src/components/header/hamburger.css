@@ -63,5 +63,8 @@
         width: 50px;
         margin: 0 20px 0 0;
     }
+    .hamburger-menu-flip {
+        transform: rotate(-180deg) translateY(3px) translateX(-6px);
+    }
 }
 

@@ -15,7 +15,7 @@ const Menu = (props) => {
                     return <li key={link.name}>
                       <Link 
                         to={`${link.path}`} 
-                        activeStyle={{background: 'black', outline: 'none', border: 'none'}}
+                        activeStyle={{background: 'rgba(250,250,250,0.1)', outline: 'none', border: 'none'}}
                       >
                         {link.name}
                       </Link>

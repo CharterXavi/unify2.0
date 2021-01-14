@@ -55,17 +55,9 @@ const Sidebar = () => {
         isSubMenuExpanded: false,
         subMenu: [
           {
-            name: 'Submenu9',
-            path: '/news/recent'
+            name: '',
+            path: ''
           },
-          {
-            name: 'Submenu10',
-            path: '/news/categories'
-          },
-          {
-            name: 'Submenu11',
-            path: '/news/tags'
-          }
         ]
       },
       {
@@ -74,8 +66,8 @@ const Sidebar = () => {
         isSubMenuExpanded: false,
         subMenu: [
           {
-            name: 'Submenu12',
-            path: '/careers/volunteering'
+            name: '',
+            path: ''
           }
         ]
       },
